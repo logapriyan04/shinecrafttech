@@ -6,7 +6,7 @@ import Projectleft1 from "../Assests/images/chatbot.png";
 import Projectcenter1 from "../Assests/images/puzzle.png";
 import Projectright1 from "../Assests/images/icons5.png";
 import Projectleft2 from "../Assests/images/icon6.png";
-import Projectcenter2 from "../Assests/images/icon7.png";
+import Projectcenter2 from "../Assests/images/database.png";
 import Projectright2 from "../Assests/images/icon8.png";
 
 const ServiceData = [
@@ -27,7 +27,7 @@ const ServiceData = [
     id: "3",
     name: "MACHINE LEARNING AND DEEP LEARNING ",
     image: Projectright,
-    para: `We develop algorithms and models that help businesses make data-driven decisions, automate processes, and predict future trends.`,
+    para: `We develop algorithms and models that help businesses make data-driven decisions,  and predict future trends.`,
   },
   {
     id: "1",
@@ -50,19 +50,19 @@ const ServiceData = [
   },
   {
     id: "1",
-    name: "3D modeling",
+    name: "3D MODELING",
     image: Projectleft2,
-    para: `We create detailed and accurate 3D models for various applications, including product design, virtual reality, and architectural visualization.`,
+    para: `We create detailed and accurate 3D models for various applications, including product design,  and architectural visualization.`,
   },
   {
     id: "2",
-    name: "Backend and cloud",
+    name: "BACKEND  AND CLOUD",
     image: Projectcenter2,
     para: `WOur services include API development, database management, and cloud migration.`,
   },
   {
     id: "3",
-    name: "IOT products",
+    name: "IOT PRODUCTS",
     image: Projectright2,
     para: `From smart home solutions to industrial IoT applications, our expertise covers a wide range of IoT technologies and use cases. `,
   },
@@ -100,8 +100,8 @@ function Services() {
               src={item.image}
               alt="serviceImage"
               className="serviceicons"
-              height={"100px"}
-              width={"100px"}
+              height={"90px"}
+              width={"90px"}
             />
             <div>
               <span className="service-name">{item.name}</span>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { BsArrowUp } from "react-icons/bs";
 import { HiArrowLongUp } from "react-icons/hi2";
+import { HiMiniArrowLongUp } from "react-icons/hi2";
 function Contact() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -60,8 +61,12 @@ function Contact() {
           </div>
         </div>
       )}
-      <div class="vertical-line-container-2"></div>
-      <HiArrowLongUp className="up-arrow" />
+      <div>
+        <a href="/Home">
+          <button className="vertical-line-container-2"></button>
+          <HiMiniArrowLongUp className="up-arrow" />
+        </a>
+      </div>
     </div>
   );
 }

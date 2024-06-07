@@ -67,7 +67,7 @@ ul {
 /***************/
 .home {
   padding-top: 6%;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 .Blockcontent-1 {
   position: relative;
@@ -125,7 +125,7 @@ ul {
   font-size: 6rem;
   font-family: "CustomFont";
   letter-spacing: 6px;
-  animation: bounce 2s infinite, slideInDown 2s;
+  animation: slideInDown 2s;
 }
 
 .para-1 {
@@ -139,7 +139,7 @@ ul {
   font-size: 3rem;
   padding-left: 0px;
   margin-top: -100px;
-  animation: bounce 2s infinite, slideInDown 2s;
+  animation: slideInDown 2s;
 }
 .vertical-line-container-1 {
   flex-grow: 1;
@@ -154,7 +154,7 @@ ul {
   margin-left: 50%;
   transform: translateY(89%);
 
-  animation: slideInDown 2s;
+  animation: bounce 2s infinite, slideInDown 2s;
 }
 .Blockcontent-2 {
   display: flex;
@@ -290,8 +290,8 @@ ul {
 .service-page1 {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 10%;
-  padding: 10%;
+  gap: 9%;
+  padding: 5%;
   height: 1000px;
   justify-content: center;
   margin-right: 15%;
@@ -299,36 +299,30 @@ ul {
 
 .content-para {
   position: absolute;
-  bottom: 110%;
-  left: 100%;
-  transform: translateX(-50%);
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px); /* Start with the element slightly below */
   visibility: hidden;
   opacity: 0;
-  width: 200px;
+  width: 150px;
+  height: 150px;
   background-color: #fff;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 1px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: visibility 0s, opacity 0.3s ease-in-out;
+  transition: visibility 0s, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out; /* Add transform transition */
   z-index: 1;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
 }
+
 .iconsimg:hover .content-para {
   visibility: visible;
   opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Slide to its original position */
 }
 
-.content-para::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-}
 .iconsimg:hover .content-para {
   display: block;
   opacity: 1;
@@ -336,17 +330,23 @@ ul {
 .iconsimg {
   display: flex;
   flex-direction: column;
-  background-color: rgb(211, 211, 211);
-  border-radius: 10px;
-  padding: 28px 90px;
-  /* justify-content: center; */
+  background-color: rgb(175, 167, 167);
+  border-radius: 1px;
+  width: 200px;
+  height: 200px;
   text-align: center;
   position: relative;
-  gap: 25px;
+  gap: 1px;
 }
 .service-name {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 15px;
+}
+.serviceicons {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin-left: 60px;
 }
 .serviceicons,
 .service-name {
@@ -723,18 +723,20 @@ ul {
 
   border-radius: 16px;
   border: 2px solid #b5a9a9;
-
-  width: 2%;
+  z-index: -1;
+  width: 30px;
   height: 80px;
   margin-left: 90%;
   transform: translateY(50px);
+  animation: bounce 2s infinite, slideInDown 2s;
 }
 .up-arrow {
   font-size: 50px;
   float: right;
   padding-right: 97px;
   color: #b5a9a9;
-  /* transform: translateX(100px); */
+  transform: translateY(-51px);
+  z-index: 3;
 }
 
 /* --------- */
